@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Herbal Energetics Materia Medica</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div>
+	  <button class="btn active" onclick="filterSelection('all')"> All</button>
+	  <button class="btn" onclick="filterSelection('planets')"> Planets</button>
+	  <button class="btn" onclick="filterSelection('signs')"> Signs</button>
+	  <button class="btn" onclick="filterSelection('elements')"> Elements</button>
+	  <button class="btn" onclick="filterSelection('modalities')"> Modalities</button>
+	</div>
+
+	<div class="container">
+		<div class ="container filterDiv planets">	
+		  <button class="btn planets filterDiv" onclick="filterSelection('sun')"> Sun</button>
+		  <button class="btn planets filterDiv" onclick="filterSelection('moon')"> Moon</button>
+		  <button class="btn planets filterDiv" onclick="filterSelection('mars')"> Mars</button>
+		  <button class="btn planets filterDiv" onclick="filterSelection('venus')"> Venus</button>
+		  <button class="btn planets filterDiv" onclick="filterSelection('mercury')"> Mercury</button>
+		  <button class="btn planets filterDiv" onclick="filterSelection('jupiter')"> Jupiter</button>
+		  <button class="btn planets filterDiv" onclick="filterSelection('saturn')"> Saturn</button>
+		</div>
+
+		<div class ="container filterDiv signs">
+			<button class="btn signs filterDiv" onclick="filterSelection('aries')"> Aries</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('taurus')"> Taurus</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('gemini')"> Gemini</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('cancer')"> Cancer</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('leo')"> Leo</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('virgo')"> Virgo</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('libra')"> Libra</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('scorpio')"> Scorpio</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('sagittarius')"> Sagittarius</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('capricorn')"> Capricorn</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('aquarius')"> Aquarius</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('pisces')"> pisces</button>
+		</div>
+
+		<div class ="container filterDiv elements">
+			<button class="btn elements filterDiv" onclick="filterSelection('earth')"> Earth</button>
+		  <button class="btn elements filterDiv" onclick="filterSelection('water')"> Water</button>
+		  <button class="btn elements filterDiv" onclick="filterSelection('air')"> Air</button>
+		  <button class="btn elements filterDiv" onclick="filterSelection('fire')"> Fire</button>
+		</div>
+
+		<div class ="container filterDiv modalities">
+			<button class="btn modalities filterDiv" onclick="filterSelection('fixed')"> Fixed</button>
+		  <button class="btn modalities filterDiv" onclick="filterSelection('cardinal')"> Cardinal</button>
+		  <button class="btn modalities filterDiv" onclick="filterSelection('mutable')"> Mutable</button>
+		</div>
+
+	  
+	</div>
+
+	<p id="showClasses"></p>
+
+	<div class="container herbs">
+		<div class="filterDiv sun">Sun Plant 0</div>
+	  	<div class="filterDiv moon">Moon Plant 0</div>
+	  	<div class="filterDiv mars">Mars Plant 0</div>
+		<div class="filterDiv venus">Venus Plant 0</div>
+		<div class="filterDiv mercury">Mercury Plant 0</div>
+		<div class="filterDiv jupiter">Jupiter Plant 0</div>
+		<div class="filterDiv saturn">Saturn Plant 0</div>
+
+		<div class="filterDiv aries cardinal fire">Aries Plant 0</div>
+	 	<div class="filterDiv taurus fixed earth">Taurus Plant 0</div>
+	 	<div class="filterDiv gemini mutable air">Gemini Plant 0</div>
+	 	<div class="filterDiv cancer cardinal water">Cancer Plant 0</div>
+	 	<div class="filterDiv leo fixed fire">Leo Plant 0</div>
+	 	<div class="filterDiv virgo mutable earth">Virgo Plant 0</div>
+	 	<div class="filterDiv libra cardinal air">Libra Plant 0</div>
+	 	<div class="filterDiv scorpio fixed water">Scorpio Plant 0</div>
+	 	<div class="filterDiv sagittarius mutable fire">Sagittarius Plant 0</div>
+	 	<div class="filterDiv capricorn cardinal earth">Capricorn Plant 0</div>
+	 	<div class="filterDiv aquarius fixed air">Aquarius Plant 0</div>
+	 	<div class="filterDiv pisces mutable water">Pisces Plant 0</div>
+
+	 	<div class="filterDiv fixed">Fixed Plant 0</div>
+	 	<div class="filterDiv cardinal">Cardinal Plant 0</div>
+	 	<div class="filterDiv mutable">Mutable Plant 0</div>
+
+	 	<div class="filterDiv fire">Fire Plant 0</div>
+	 	<div class="filterDiv earth">Earth Plant 0</div>
+	 	<div class="filterDiv air">Air Plant 0</div>
+	 	<div class="filterDiv water">Water Plant 0</div>
+	</div>
+
+</body>
+
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+
+</html>
