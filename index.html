@@ -8,15 +8,20 @@
 
 <body>
 
-	<div>
+	<div id="categories">
 	  <button class="btn active" onclick="filterSelection('all')"> All</button>
 	  <button class="btn" onclick="filterSelection('planets')"> Planets</button>
 	  <button class="btn" onclick="filterSelection('signs')"> Signs</button>
 	  <button class="btn" onclick="filterSelection('elements')"> Elements</button>
 	  <button class="btn" onclick="filterSelection('modalities')"> Modalities</button>
+	  <button class="btn" onclick="filterSelection('tissue-states')"> Tissue States</button>
+	  <button class="btn" onclick="filterSelection('actions')"> Actions</button>
+	  <button class="btn" onclick="filterSelection('systems')"> Systems</button>
 	</div>
 
-	<div class="container">
+
+	<div id="subCategories" class="container">
+
 		<div class ="container filterDiv planets">	
 		  <button class="btn planets filterDiv" onclick="filterSelection('sun')"> Sun</button>
 		  <button class="btn planets filterDiv" onclick="filterSelection('moon')"> Moon</button>
@@ -28,7 +33,7 @@
 		</div>
 
 		<div class ="container filterDiv signs">
-			<button class="btn signs filterDiv" onclick="filterSelection('aries')"> Aries</button>
+		  <button class="btn signs filterDiv" onclick="filterSelection('aries')"> Aries</button>
 		  <button class="btn signs filterDiv" onclick="filterSelection('taurus')"> Taurus</button>
 		  <button class="btn signs filterDiv" onclick="filterSelection('gemini')"> Gemini</button>
 		  <button class="btn signs filterDiv" onclick="filterSelection('cancer')"> Cancer</button>
@@ -43,16 +48,49 @@
 		</div>
 
 		<div class ="container filterDiv elements">
-			<button class="btn elements filterDiv" onclick="filterSelection('earth')"> Earth</button>
+		  <button class="btn elements filterDiv" onclick="filterSelection('earth')"> Earth</button>
 		  <button class="btn elements filterDiv" onclick="filterSelection('water')"> Water</button>
 		  <button class="btn elements filterDiv" onclick="filterSelection('air')"> Air</button>
 		  <button class="btn elements filterDiv" onclick="filterSelection('fire')"> Fire</button>
 		</div>
 
 		<div class ="container filterDiv modalities">
-			<button class="btn modalities filterDiv" onclick="filterSelection('fixed')"> Fixed</button>
+		  <button class="btn modalities filterDiv" onclick="filterSelection('fixed')"> Fixed</button>
 		  <button class="btn modalities filterDiv" onclick="filterSelection('cardinal')"> Cardinal</button>
 		  <button class="btn modalities filterDiv" onclick="filterSelection('mutable')"> Mutable</button>
+		</div>
+
+
+		<div class="container filterDiv tissue-states">
+			<button class="btn tissue-states filterDiv" onclick="filterSelection('wind-tension')"> Wind-tension</button>
+			<button class="btn tissue-states filterDiv" onclick="filterSelection('tension')"> Tension</button>
+			<button class="btn tissue-states filterDiv" onclick="filterSelection('cramping')"> Cramping</button>
+			<button class="btn tissue-states filterDiv" onclick="filterSelection('cramping')"> Spasm</button>
+		</div>
+
+
+		<div class="container filterDiv actions">
+			<button class="btn actions filterDiv" onclick="filterSelection('antispasmodic')"> Antispasmodic</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('sedative')"> Sedative</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('relaxant')"> Relaxant</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('anodyne')"> Anodyne</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('hypnotic')"> Hypnotic</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('cooling')"> Cooling</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('warming')"> Warming</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('expectorant')"> Expectorant</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('emetic')"> Emetic</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('diaphoretic')"> Diaphoretic</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('moistening')"> Moistening</button>
+			<button class="btn actions filterDiv" onclick="filterSelection('drying')"> Drying</button>
+		</div>
+		
+		<div class="container filterDiv systems">
+			<button class="btn systems filterDiv" onclick="filterSelection('musculoskeletal')"> Musculoskeletal</button>
+			<button class="btn systems filterDiv" onclick="filterSelection('muscular')"> Muscular</button>
+			<button class="btn systems filterDiv" onclick="filterSelection('smooth-muscle')"> Smooth-muscle</button>
+			<button class="btn systems filterDiv" onclick="filterSelection('skeletal-muscle')"> Skeletal-muscle</button>
+			<button class="btn systems filterDiv" onclick="filterSelection('nervine')"> Nervine</button>
+			<button class="btn systems filterDiv" onclick="filterSelection('respiratory')"> Respiratory</button>
 		</div>
 
 	  
@@ -90,6 +128,9 @@
 	 	<div class="filterDiv earth">Earth Plant 0</div>
 	 	<div class="filterDiv air">Air Plant 0</div>
 	 	<div class="filterDiv water">Water Plant 0</div>
+
+	 	<div class="herbs filterDiv antispasmodic cold diaphoretic drying expectorant emetic muscular skeletal-muscle smooth-muscle pungent relaxant warming not-sedative">Lobelia (Lobelia inflata)</div>
+	 	<div class="filterDiv ">Black Cohosh (Actaea racemosa or Cimicifuga racemosa)</div>
 	</div>
 
 </body>
@@ -98,3 +139,13 @@
 <script src="script.js"></script>
 
 </html>
+
+<!-- Add:
+	- anodyne
+	- wind
+	-pungent
+	-cooling
+	-warming
+
+	- "Not" buttons - not sedating, etc
+-->
