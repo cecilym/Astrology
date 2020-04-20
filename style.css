@@ -38,7 +38,12 @@ div {
 
 /* Add a dark background to the active button */
 .btn.active {
-  background-color: purple;
+  background-color: magenta;
   color: white;
+}
+
+.herbs {
+  width: auto;
+  font-weight: bold;
 }
 
