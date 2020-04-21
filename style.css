@@ -3,6 +3,22 @@ body {
   color: #646464;
 }
 
+h3 {
+	text-decoration: underline;
+}
+
+a {
+	color: navy;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .aA-wrap {
   float: left;
   width: 20%;
@@ -21,6 +37,7 @@ body {
 .herbs {
   float: left;
   width: 50%;
+  font-size: 14px;
 }
 
 .herbs div {
@@ -33,4 +50,6 @@ body {
   margin: 0 0 1px;
   position: relative;
 }
+
+
 
