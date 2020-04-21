@@ -1,49 +1,36 @@
-div {
-  padding: 5px;
+body {
+  font-family: 'Arial';
+  color: #646464;
 }
 
-.container {
-  overflow: hidden;
-}
-
-.filterDiv {
+.aA-wrap {
   float: left;
-  background-color: white;
-  color: black;
-  width: 120px;
-  line-height: 20px;
-  text-align: center;
-  margin: 1px;
-  display: none; /* Hidden by default */
+  width: 20%;
+  margin: 0 5% 0 0;
+  padding: 0;
 }
 
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 5px 5px;
-  background-color: pink;
-  cursor: pointer;
-}
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: hotpink;
-}
-
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: magenta;
-  color: white;
+.energetics {
+  float: left;
+  width: 20%;
+  margin: 0 5% 0 0;
+  padding: 0;
+  position: relative;
 }
 
 .herbs {
-  width: auto;
-  font-weight: bold;
+  float: left;
+  width: 50%;
+}
+
+.herbs div {
+  float: left;
+  width: 90%;
+  height: 68px;
+  line-height: 68px;
+  padding: 0 5%;
+  background: #eee;
+  margin: 0 0 1px;
+  position: relative;
 }
 

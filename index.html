@@ -4,10 +4,78 @@
 	<meta charset="UTF-8">
 	<title>Herbal Energetics Materia Medica</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
 </head>
 
 <body>
+	<h2>Herbal Energetics Materia Medica</h2>
 
+	<pre id=result> </pre>
+
+	<div class="energetics">
+	  <h3 style="font-size:14px; font-weight:normal;">Energetics</h3>
+
+	  <p style="font-size:12px;"><strong>Planets</strong></p>
+	  <form>
+	    <label style="font-size:12px;">
+	      <input type="checkbox" name="planets" value="sun" id="sun" /> Sun</label>
+	    <br>
+	    <label style="font-size:12px;">
+	      <input type="checkbox" name="planets" value="moon" id="moon" /> Moon</label>
+	  </form>
+
+	  <p style="font-size:12px;"><strong>Signs</strong></p>
+	  <form>
+	    <label style="font-size:12px;">
+	      <input type="checkbox" name="signs" value="aries" id="aries" /> Aries</label>
+	    <br>
+	    <label style="font-size:12px;">
+	      <input type="checkbox" name="signs" value="taurus" id="taurus" /> Taurus</label>
+	    <br>
+	  </form>
+
+	</div>
+
+<div class="aA-wrap">
+  <h3 style="font-size:14px; font-weight:normal;">Actions and Affinities</h3>
+
+  <p style="font-size:12px;"><strong>Actions</strong></p>
+  <div class="aA" style="font-size:12px;">
+    <div>Nervine
+      <input type="checkbox" name="fl-cont" value="nervine" id="nervine" />
+    </div>
+    <div>Sedative
+      <input type="checkbox" name="fl-cont" value="sedative" id="sedative" />
+    </div>
+  </div>
+
+  <p style="font-size:12px;"><strong>Affinities</strong></p>
+  <div class="aA" style="font-size:12px;">
+    <div>Blood
+      <input type="checkbox" name="affinities" value="blood" id="blood" />
+    </div>
+    <div>Smooth Muscle
+      <input type="checkbox" name="affinities" value="smooth-muscle" id="smooth-muscle" />
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="herbs">
+  <div class="herb" data-id="camellia" data-category="moon">Camellia</div>
+  <div class="herb" data-id="scarlet-carnation" data-category="sun aries">Sun Plant 0</div>
+  <div class="herb" data-id="indian-paintbrush" data-category="sun taurus">Sun Plant 1</div>
+</div>
+
+
+	<h5>Informed by the <a href="https://www.evolutionaryherbalism.com/">School of Evolutionary Herbalism</a></h5>
+ 
+</body>
+
+<!--
 	<div id="categories">
 	  <button class="btn active" onclick="filterSelection('all')"> All</button>
 	  <button class="btn" onclick="filterSelection('planets')"> Planets</button>
@@ -132,11 +200,8 @@
 	 	<div class="herbs filterDiv antispasmodic cold diaphoretic drying expectorant emetic muscular skeletal-muscle smooth-muscle pungent relaxant warming not-sedative">Lobelia (Lobelia inflata)</div>
 	 	<div class="filterDiv ">Black Cohosh (Actaea racemosa or Cimicifuga racemosa)</div>
 	</div>
+-->
 
-</body>
-
-<script src="jquery.js"></script>
-<script src="script.js"></script>
 
 </html>
 
