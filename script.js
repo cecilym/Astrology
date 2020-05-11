@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  console.log( 'ready2!' );
+  console.log( 'ready' );
+  $('.delineation').hide();
   
   var $filterCheckboxes = $('input[type="checkbox"]');
 
@@ -18,18 +19,18 @@ $(document).ready(function () {
     });
 
     // create a collection containing all of the filterable elements
-    var $filteredResults = $('.herb');
+    var $filteredResults = $('.delineation');
 
     // loop over the selected filter name -> (array) values pairs
     $.each(selectedFilters, function(name, filterValues) {
 
-      // filter each .herb element
+      // filter each .delineation element
       $filteredResults = $filteredResults.filter(function() {
 
         var matched = false,
           currentFilterValues = $(this).data('category').split(' ');
 
-        // loop over each category value in the current .herb's data-category
+        // loop over each category value in the current .delineation' data-category
         $.each(currentFilterValues, function(_, currentFilterValue) {
 
           // if the current category exists in the selected filters array
@@ -42,13 +43,13 @@ $(document).ready(function () {
           }
         });
 
-        // if matched is true the current .herb element is returned
+        // if matched is true the current .delineation element is returned
         return matched;
 
       });
     });
 
-    $('.herb').hide().filter($filteredResults).show();
+    $('.delineation').hide().filter($filteredResults).show();
 
   });
 
