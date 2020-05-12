@@ -19,14 +19,14 @@ a {
   text-align: center;
 }
 
-.in-domicile-wrap {
+.right-side-wrap {
   float: left;
   width: 20%;
   margin: 0 5% 0 0;
   padding: 0;
 }
 
-.first-planet {
+.left-side {
   float: left;
   width: 20%;
   margin: 0 5% 0 0;
