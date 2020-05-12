@@ -1,32 +1,6 @@
-## Welcome to GitHub Pages
+This project began as a way to organize herbs in terms of astrological energetics. On May 11th, 2020, I forked the project, modifying it to potentially organize and present delineations. On May 12th, 2020, I merged the projects so that users could switch between the Astro Herbalism and Herbal Energetics page views. It is now hosted on https://cecilym.github.io/Astrolog
 
-You can use the [editor on GitHub](https://github.com/cecilym/herbalEnergetics/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+There is currently only one delineation in the index.html file: Mercury in the domicile of Jupiter.
 
 ### Jekyll Themes
 
