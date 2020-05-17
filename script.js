@@ -1,6 +1,6 @@
 $(document).ready(function () {
   console.log( 'ready' );
-  $('.delineation').hide();
+  $('.delineation').hide(); 
   
   var $filterCheckboxes = $('input[type="checkbox"]');
 
