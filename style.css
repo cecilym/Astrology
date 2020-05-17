@@ -3,9 +3,6 @@ body {
   color: #646464;
 }
 
-h3 {
-	text-decoration: underline;
-}
 
 a {
 	color: navy;
@@ -44,7 +41,7 @@ a {
   float: left;
   width: 90%;
   padding: 2%;
-  margin: 3px;
+  margin: 1px;
   position: relative;
 }
 
