@@ -1,6 +1,10 @@
 $(document).ready(function () {
   console.log( 'ready' );
-  $('.delineation').hide(); 
+  
+  // May want to hide at load when list gets longer: $('.delineation').hide();
+
+  // Hide delineations that need to be edited
+  $('.edit').hide();
   
   var $filterCheckboxes = $('input[type="checkbox"]');
 
@@ -33,9 +37,8 @@ $(document).ready(function () {
         // loop over each category value in the current .delineation' data-category
         $.each(currentFilterValues, function(_, currentFilterValue) {
 
-          // if the current category exists in the selected filters array
-          // set matched to true, and stop looping. as we're ORing in each
-          // set of filters, we only need to match once
+          // If the current category exists in the selected filters array set matched to true, and stop looping
+          // We're ORing in each set of filters so only need to match once
 
           if ($.inArray(currentFilterValue, filterValues) != -1) {
             matched = true;
